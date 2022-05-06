@@ -1,4 +1,8 @@
-import React from 'react'
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUserGraduate } from '@fortawesome/free-solid-svg-icons';
+import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
+import { faCode } from '@fortawesome/free-solid-svg-icons';
 
 function Accordion() {
   return (
@@ -13,7 +17,7 @@ function Accordion() {
                 aria-expanded="false"
                 aria-controls="flush-collapseOne"
               >
-                Education
+                <FontAwesomeIcon icon={faUserGraduate} />Education
               </button>
             </h2>
             <div
@@ -50,7 +54,7 @@ function Accordion() {
                 aria-expanded="false"
                 aria-controls="flush-collapseTwo"
               >
-                Experience
+                <FontAwesomeIcon icon={faBriefcase} />Experience
               </button>
             </h2>
             <div
@@ -87,7 +91,7 @@ function Accordion() {
                 aria-expanded="false"
                 aria-controls="flush-collapseThree"
               >
-                My Skills
+                <FontAwesomeIcon icon={faCode} />My Skills
               </button>
             </h2>
             <div

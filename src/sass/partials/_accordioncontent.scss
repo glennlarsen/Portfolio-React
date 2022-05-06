@@ -1,6 +1,10 @@
 .accordion-item {
   color: black;
 
+  svg {
+    margin-right: 10px;
+  }
+
   span {
     display: contents;
     font-style: italic;

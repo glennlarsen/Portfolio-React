@@ -9,6 +9,10 @@
 .nav-item {
   gap: 0;
 
+  svg {
+    margin-right: 10px;
+  }
+
   &:first-child {
     button {
       border-top-left-radius: 8px;

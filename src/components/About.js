@@ -1,6 +1,5 @@
 import React from 'react'
 import Head from "./Head";
-import Navigation from "./Navigation";
 import AboutMe from './AboutMe';
 import Accordion from './Accordion';
 import Tabs from './Tabs';
@@ -8,15 +7,14 @@ import Tabs from './Tabs';
 function About() {
     return (
         <>
-        <Head page="About" description="Short about me, my experience and education. Download my CV" />
-            <Navigation />
+            <Head page="About" description="Short about me, my experience and education. Download my CV" />
             <div className="container">
-            <section class="about content">
-            <h1>About me</h1>
-            <AboutMe />
-            <Accordion />
-            <Tabs />
-            </section>
+                <section class="about content">
+                    <h1>About me</h1>
+                    <AboutMe />
+                    <Accordion />
+                    <Tabs />
+                </section>
             </div>
         </>
 

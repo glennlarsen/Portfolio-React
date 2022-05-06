@@ -1,4 +1,8 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUserGraduate } from '@fortawesome/free-solid-svg-icons';
+import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
+import { faCode } from '@fortawesome/free-solid-svg-icons';
 
 function Tabs() {
   return (
@@ -15,7 +19,7 @@ function Tabs() {
             aria-controls="education"
             aria-selected="true"
           >
-            Education
+            <FontAwesomeIcon icon={faUserGraduate} />Education
           </button>
         </li>
         <li class="nav-item" role="presentation">
@@ -29,7 +33,7 @@ function Tabs() {
             aria-controls="experience"
             aria-selected="false"
           >
-            Experience
+            <FontAwesomeIcon icon={faBriefcase} />Experience
           </button>
         </li>
         <li class="nav-item" role="presentation">
@@ -43,7 +47,7 @@ function Tabs() {
             aria-controls="skills"
             aria-selected="false"
           >
-            My Skills
+            <FontAwesomeIcon icon={faCode} />My Skills
           </button>
         </li>
       </ul>
