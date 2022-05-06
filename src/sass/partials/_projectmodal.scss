@@ -1,0 +1,119 @@
+.modal-header {
+  display: block !important;
+  text-align: center;
+  color: $color-primary;
+
+  button {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    cursor: pointer;
+
+    @media screen and (min-width: 750px) {
+      right: 15px;
+      top: 15px;
+    }
+  }
+
+  .project-links {
+    display: flex;
+    justify-content: space-around;
+    margin: 0.5em 0;
+    font-style: italic;
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.modal-content {
+  border: 3px solid $color-primary !important;
+  max-width: 950px;
+
+  animation-name: grow-box;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+
+  @keyframes grow-box {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+}
+
+.modal-dialog {
+  max-width: 900px !important;
+}
+
+.modal-body {
+  text-align: center;
+  color: black;
+
+  img {
+    min-height: 300px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+
+    &:hover {
+      filter: brightness(90%);
+    }
+
+    @media screen and (min-width: 750px) {
+      max-height: 490px;
+      object-fit: contain;
+    }
+  }
+
+  p {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .project-info {
+    display: flex;
+    gap: 1rem;
+
+    div {
+      flex: 1;
+    }
+  }
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.project-modal {
+  transition: transform 0.2s ease;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  border-radius: 8px;
+  height: 100%;
+  margin: 0 1rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  transition: opacity 0.2s ease;
+  z-index: 200;
+}

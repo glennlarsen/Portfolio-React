@@ -1,0 +1,68 @@
+
+.carousel {
+  max-width: 1600px;
+  margin: auto;
+}
+
+.cb-centermode {
+  margin-bottom: 20px;
+  display: block;
+}
+.cb-centermode input {
+  margin-right: 7px;
+}
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+.slick-list {
+  margin: 0 -10px;
+}
+
+.slick-slide *:focus {
+  outline: none;
+}
+
+.slick-dots {
+  bottom: -40px !important;
+
+  li::before {
+    display: none !important;
+  }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 30px !important;
+  color: $color-primary !important;
+}
+
+.slick-next {
+  right: -8px !important;
+  z-index: 100 !important;
+}
+
+.slick-prev {
+  left: -18px !important;
+  z-index: 100 !important;
+}
+.slick-dots li button:before {
+  font-size: 10px !important;
+  color: $color-primary !important;
+}
+
+.slick-track {
+  float: left;
+}
+
+@media screen and (max-width: 700px) {
+  .slick-next {
+    right: 3px !important;
+  }
+  
+  .slick-prev {
+    left: -11px !important;
+  }
+}
+

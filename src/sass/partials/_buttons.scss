@@ -1,0 +1,16 @@
+
+.btn-submit {
+  border: none;
+  background-color: $color-primary;
+  color: white;
+  padding: 1.5em 4em;
+  border-radius: 8px;
+  max-width: 200px;
+  align-self: center;
+  cursor: pointer;
+  font-size: inherit;
+
+  &:hover {
+    background-color: $color-primary-hover;
+  }
+}
