@@ -9,7 +9,7 @@ function Tabs() {
       <ul className="nav nav-tabs" id="myTab" role="tablist">
         <li className="nav-item" role="presentation">
           <button
-            class="nav-link active"
+            className="nav-link active"
             id="education-tab"
             data-bs-toggle="tab"
             data-bs-target="#education"

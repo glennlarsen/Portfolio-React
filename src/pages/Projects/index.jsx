@@ -1,5 +1,6 @@
-import Head from "../Head";
-import Carousel from './Carousel';
+import Head from "../../components/Head";
+import Carousel from '../../components/Carousel';
+import Header from "../../components/Header";
 
 function Projects() {
     return (
@@ -7,7 +8,7 @@ function Projects() {
             <Head page="My Projects" description="View all of my previous projects including images and specifications" />
             <div className="container">
                 <section className="projects">
-                    <h1>My Projects</h1>
+                    <Header>My Projects</Header>
                     <Carousel />
                 </section>
             </div>

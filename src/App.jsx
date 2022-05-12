@@ -1,9 +1,9 @@
 import './sass/style.scss';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./components/home/Home";
-import Projects from "./components/projects/Projects";
-import About from "./components/about/About";
-import Contact from "./components/contact/Contact";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 import Navigation from './components/Navigation';
 
 

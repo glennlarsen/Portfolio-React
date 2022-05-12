@@ -1,5 +1,7 @@
+import myCV from "../../content/Glenn-Larsen-CV.pdf";
 
 function AboutMe() {
+
   return (
     <>
       <p>
@@ -10,7 +12,7 @@ function AboutMe() {
       </p>
 
       <div className="cv">
-        <a href="./Content/Glenn-Larsen-CV.pdf" download>Download CV</a>
+        <a href={myCV} download="Glenn-Larsen-CV">Download CV</a>
       </div>
     </>
   )

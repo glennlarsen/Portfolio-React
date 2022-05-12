@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Slider from "react-slick";
-import { projectList } from '../constants/projectList'
-import Modal from './Modal.js'
+import { projectList } from '../../js/constants/projectList'
+import Modal from '../Modal/index.jsx'
 
 // Import css files
 import "slick-carousel/slick/slick.css";
@@ -56,12 +56,12 @@ export default function Carousel() {
         <>
             <div className="carousel">
                 <Slider {...settings}>
-                    {projectList.map((x) => {
+                    {projectList.map((project) => {
                         return (
-                            <div key={x.id} onClick={() => toggleItem(x)}>
-                                <div className="project" style={{ background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${x.image}) 50% 0% / cover no-repeat` }} >
-                                    <h2>{x.title}</h2>
-                                    <h3>{x.type}</h3>
+                            <div key={project.id} onClick={() => toggleItem(project)}>
+                                <div className="project" style={{ background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${project.image}) 50% 0% / cover no-repeat` }} >
+                                    <h2>{project.title}</h2>
+                                    <h3>{project.type}</h3>
                                 </div>
                             </div>
                         )

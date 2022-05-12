@@ -1,8 +1,6 @@
-
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 
 html,
 body {
@@ -25,8 +23,7 @@ body {
 }
 
 .intro {
-
-  @mixin quotes ($side, $topPercentage, $sidePercentage) {
+  @mixin quotes($side, $topPercentage, $sidePercentage) {
     background: $color-primary;
     padding: 2rem;
     border-radius: 8px;
@@ -39,7 +36,6 @@ body {
     #{$side}: $sidePercentage;
     top: $topPercentage;
   }
-
 
   div {
     max-width: 33%;
@@ -72,13 +68,11 @@ body {
     margin: 1em auto;
   }
 
-
   .quotes-left {
     @include quotes(right, 50%, 600%);
   }
 
   .quotes-right {
     @include quotes(left, 25%, 600%);
-}
-
+  }
 }
