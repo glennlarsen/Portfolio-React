@@ -1,5 +1,4 @@
-import React from 'react'
-import Head from "./Head";
+import Head from "../Head";
 import ContactByEmail from './ContactByEmail';
 import ContactForm from './ContactForm';
 
@@ -19,4 +18,4 @@ function Contact() {
     )
 }
 
-export default Contact
+export default Contact;

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from "axios";
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
@@ -40,7 +40,7 @@ export const ContactForm = () => {
             });
     };
 
-    {
+    
         return (
             <Formik onSubmit={handleOnSubmit}
                 initialValues={{
@@ -87,7 +87,7 @@ export const ContactForm = () => {
                 )}
             </Formik>
         )
-    }
+    
 }
 
 

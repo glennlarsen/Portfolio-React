@@ -1,23 +1,22 @@
 import './sass/style.scss';
-import React from 'react'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
-import Projects from "./components/Projects";
-import About from "./components/About";
-import Contact from "./components/Contact";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./components/home/Home";
+import Projects from "./components/projects/Projects";
+import About from "./components/about/About";
+import Contact from "./components/contact/Contact";
 import Navigation from './components/Navigation';
 
 
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Navigation />
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/projects" element={<Projects />} />
-        <Route exact path="/about" element={<About />} />
-        <Route exact path="/contact" element={<Contact />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
         <Route
           path="*"
           element={
@@ -27,7 +26,7 @@ function App() {
           }
         />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 

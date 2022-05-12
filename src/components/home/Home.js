@@ -1,5 +1,5 @@
 import Intro from "./Intro";
-import Head from "./Head";
+import Head from "../Head";
 
 function Home() {
     return (

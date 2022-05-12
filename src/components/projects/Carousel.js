@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Slider from "react-slick";
-import { projectList } from './constants/projectList'
+import { projectList } from '../constants/projectList'
 import Modal from './Modal.js'
 
 // Import css files

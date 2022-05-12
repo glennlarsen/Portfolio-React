@@ -1,4 +1,3 @@
-import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserGraduate } from '@fortawesome/free-solid-svg-icons';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
@@ -6,9 +5,9 @@ import { faCode } from '@fortawesome/free-solid-svg-icons';
 
 function Tabs() {
   return (
-    <div class="tabs">
-      <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
+    <div className="tabs">
+      <ul className="nav nav-tabs" id="myTab" role="tablist">
+        <li className="nav-item" role="presentation">
           <button
             class="nav-link active"
             id="education-tab"
@@ -22,9 +21,9 @@ function Tabs() {
             <FontAwesomeIcon icon={faUserGraduate} />Education
           </button>
         </li>
-        <li class="nav-item" role="presentation">
+        <li className="nav-item" role="presentation">
           <button
-            class="nav-link"
+            className="nav-link"
             id="experience-tab"
             data-bs-toggle="tab"
             data-bs-target="#experience"
@@ -36,9 +35,9 @@ function Tabs() {
             <FontAwesomeIcon icon={faBriefcase} />Experience
           </button>
         </li>
-        <li class="nav-item" role="presentation">
+        <li className="nav-item" role="presentation">
           <button
-            class="nav-link"
+            className="nav-link"
             id="skills-tab"
             data-bs-toggle="tab"
             data-bs-target="#skills"
@@ -51,9 +50,9 @@ function Tabs() {
           </button>
         </li>
       </ul>
-      <div class="tab-content" id="myTabContent">
+      <div className="tab-content" id="myTabContent">
         <div
-          class="tab-pane fade show active"
+          className="tab-pane fade show active"
           id="education"
           role="tabpanel"
           aria-labelledby="education-tab"
@@ -71,12 +70,12 @@ function Tabs() {
             <li>
               BI Norwegian Business school - Bachelor in economics<br />
               <span>2009
-              - 2012</span>
+                - 2012</span>
             </li>
           </ul>
         </div>
         <div
-          class="tab-pane fade"
+          className="tab-pane fade"
           id="experience"
           role="tabpanel"
           aria-labelledby="experience-tab"
@@ -97,21 +96,20 @@ function Tabs() {
           </ul>
         </div>
         <div
-          class="tab-pane fade"
+          className="tab-pane fade"
           id="skills"
           role="tabpanel"
           aria-labelledby="skills-tab"
         >
           <ul>
-            <li>HTML/CSS</li>
-            <li>Javascript/React</li>
-            <li>SASS</li>
+            <li>HTML/CSS/SASS</li>
+            <li>Javascript/Typescript/React</li>
+            <li>Bootstrap</li>
             <li>Adobe Photoshop</li>
             <li>Adobe XD</li>
-            <li>Bootstrap</li>
-            <li>Strapi API</li>
-            <li>GIThub/GITlab</li>
+            <li>Rest API/Strapi API</li>
             <li>Wordpress CMS</li>
+            <li>GIT/GIThub/GITlab</li>
           </ul>
         </div>
       </div>

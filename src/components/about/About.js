@@ -1,5 +1,4 @@
-import React from 'react'
-import Head from "./Head";
+import Head from "../Head";
 import AboutMe from './AboutMe';
 import Accordion from './Accordion';
 import Tabs from './Tabs';
